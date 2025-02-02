@@ -2,8 +2,8 @@ import { VideoPlane } from "@/components";
 import { Totoro } from "@/models";
 import {
   Environment,
-  GizmoHelper,
-  GizmoViewport,
+  // GizmoHelper,
+  // GizmoViewport,
   MeshReflectorMaterial,
   OrbitControls,
   RoundedBox,
@@ -155,12 +155,12 @@ export const HomeScene = ({ play }: { play: boolean }) => {
         <boxGeometry />
         <meshStandardMaterial color="red" />
       </mesh> */}
-      <GizmoHelper alignment="bottom-right" margin={[100, 100]}>
+      {/* <GizmoHelper alignment="bottom-right" margin={[100, 100]}>
         <GizmoViewport
           axisColors={["red", "green", "blue"]}
           labelColor="black"
         />
-      </GizmoHelper>
+      </GizmoHelper> */}
       <group position={[0, -3, 0]}>
         <VideoPlane
           play={play}
