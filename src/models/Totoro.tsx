@@ -2,7 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import { GroupProps } from "@react-three/fiber";
 
 export const Totoro = (props: GroupProps) => {
-  const { nodes, materials } = useGLTF("/uploads_files_2951928_Totoro.glb");
+  const { nodes, materials } = useGLTF("./uploads_files_2951928_Totoro.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -168,4 +168,4 @@ export const Totoro = (props: GroupProps) => {
   );
 };
 
-useGLTF.preload("/uploads_files_2951928_Totoro.glb");
+useGLTF.preload("./uploads_files_2951928_Totoro.glb");
