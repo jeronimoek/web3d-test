@@ -167,6 +167,7 @@ export const HomeScene = ({ play }: { play: boolean }) => {
           videoUrl="./totoro.mp4"
           position={[0, 5, -0.6]}
           rotation-y={Math.PI}
+          muted
         />
         <VideoPlane play={play} videoUrl="./totoro.mp4" />
         <mesh castShadow receiveShadow position={[0, 5, 0]}>
